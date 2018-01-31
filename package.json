@@ -1,0 +1,19 @@
+{
+  "name": "self-promotion-bot",
+  "version": "1.0.0",
+  "description": "A promotion solution for Discord!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pesky12/Self-Promotion-Bot.git"
+  },
+  "author": "Pesky12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pesky12/Self-Promotion-Bot/issues"
+  },
+  "homepage": "https://github.com/Pesky12/Self-Promotion-Bot#readme"
+}
