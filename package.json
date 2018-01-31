@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Pesky12/Self-Promotion-Bot/issues"
   },
-  "homepage": "https://github.com/Pesky12/Self-Promotion-Bot#readme"
+  "homepage": "https://github.com/Pesky12/Self-Promotion-Bot#readme",
+  "dependencies": {
+    "discord.js": "11.3.0",
+    "dotenv": "5.0.0"
+  }
 }
