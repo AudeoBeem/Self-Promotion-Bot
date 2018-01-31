@@ -4,17 +4,25 @@ const dclient = new discord.Client()
 
 dotEnv.load()
 
+let channelNames = [
+  'self-promotion',
+  'self-advertisement',
+  'advertising'
+]
+
 dclient.on('message', msg => {
   if (msg.author.id !== dclient.user.id) return
   if (!msg.content.startsWith('~promote')) return
   let messageArray = msg.content.split(' ')
   let promotionMessage = messageArray.slice(1).join(' ')
   let channelsSent = []
-  dclient.channels.findAll('name', 'self-promotion').forEach(c => {
-    c.send(promotionMessage)
-    channelsSent.push(' ' + c.guild.name)
+  channelNames.forEach(channelName => {
+    dclient.channels.findAll('name', channelName).forEach(c => {
+      c.send(promotionMessage)
+      channelsSent.push('\n' + c.guild.name + ' | #' + c.name)
+    })
   })
-  msg.channel.send(`This message was sent to:${channelsSent}`)
+  msg.channel.send(`This message was sent to:\n\`${channelsSent}\``)
 })
 
 dclient.on('ready', () => {
