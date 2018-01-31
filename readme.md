@@ -16,7 +16,7 @@ Add your Discord token in the .env file
 
 Run ```node .``` in the terminal/cmd
 
-If you see ```Bot is ready. Active user *(username)*``` you did it right.
+If you see ```Ready. Active user *(username)*``` you did it right.
 
 Now use ```~promote *[Message to send]*``` into any Discord channel.
 
