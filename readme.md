@@ -22,5 +22,11 @@ Now use ```~promote *[Message to send]*``` into any Discord channel.
 
 **Bam!** Congratrulaton you did it!
 
+## Custom channel names
+
+Open the **index.js** file with a text editor.
+
+Add channel names into the ```channelNames``` [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
 ### Built With
 [Discord.js](https://github.com/discordjs/discord.js)
